@@ -51,7 +51,7 @@ app.get("/users", async (req: Request, res: Response) => {
             const result = await db("users").where("name", "LIKE", `%${qUsers}%`) //busca por nome, ex: "fulano".
             res.status(200).send(result) 
         }
-        
+    
 
     } catch (error) {
         console.log(error)
