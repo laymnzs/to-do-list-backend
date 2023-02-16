@@ -48,7 +48,7 @@ app.get("/users", async (req: Request, res: Response) => {
 
         } else {
             //const result = await db("users").where("email", "LIKE", `%${qUsers}%`) //busca por email, ex: "beltrana@emai.com"
-            const result = await db("users").where("name", "LIKE", `%${qUsers}%`) //busca por nome, ex: "fulano".
+            const result = await db("users").where("name", "LIKE", `%${qUsers}%`) //busca por nome, ex: "fulano"
             res.status(200).send(result) 
         }
     
