@@ -5,7 +5,7 @@ import { db } from './database/knex'
 const app = express() //cria o aplicativo
 
 app.use(cors())
-app.use(express.json()) //trabalha objetos de entrada e a saída em json
+app.use(express.json()) //trabalha objetos de entrada e a saída em json.
 
 app.listen(3003, () => {
     console.log(`Servidor rodando na porta ${3003}`)
