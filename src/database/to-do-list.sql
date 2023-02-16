@@ -1,4 +1,4 @@
--- Active: 1675772788197@@127.0.0.1@3306
+-- Active: 1676518748269@@127.0.0.1@3306
 CREATE TABLE users (
     id TEXT PRIMARY KEY UNIQUE NOT NULL, --chave primária e unique(não pode ser repitida)
     name TEXT NOT NULL, --pode repetir e é obrigatório
@@ -43,3 +43,9 @@ VALUES
 SELECT * FROM users;
 SELECT * FROM tasks;
 SELECT * FROM users_tasks;
+
+DROP TABLE users;
+
+DROP TABLE tasks;
+
+DROP TABLE users_tasks;
